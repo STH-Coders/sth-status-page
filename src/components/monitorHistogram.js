@@ -41,16 +41,13 @@ export default function MonitorHistogram({ monitorId, kvMonitor }) {
               <span className="font-semibold text-sm">
                 {dayInHistogramLabel}
               </span>
-              {kvMonitor &&
-                kvMonitor.checks.hasOwnProperty(dayInHistogram) &&
-                Object.keys(kvMonitor.checks[dayInHistogram].res).map((key) => {
-                  return (
-                    <MonitorDayAverage
-                      location={key}
-                      avg={kvMonitor.checks[dayInHistogram].res[key].a}
-                    />
-                  )
-                })}
+              {kvMonitor?.checks.hasOwnProperty(dayInHistogram) &&
+                Object.keys(kvMonitor.checks[dayInHistogram].res).map((key) => (
+                  <MonitorDayAverage
+                    location={key}
+                    avg={kvMonitor.checks[dayInHistogram].res[key].a}
+                  />
+                ))}
             </div>
           </div>
         )

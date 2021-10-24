@@ -13,11 +13,10 @@ export async function setKVMonitors(data) {
   return setKV(kvDataKey, JSON.stringify(data))
 }
 
-const getOperationalLabel = (operational) => {
-  return operational
+const getOperationalLabel = (operational) =>
+  operational
     ? config.settings.monitorLabelOperational
     : config.settings.monitorLabelNotOperational
-}
 
 export async function setKV(key, value, metadata, expirationTtl) {
   return KV_STATUS_PAGE.put(key, value, { metadata, expirationTtl })
@@ -27,7 +26,9 @@ export async function notifySlack(monitor, operational) {
   const payload = {
     attachments: [
       {
-        fallback: `Monitor ${monitor.name} changed status to ${getOperationalLabel(operational)}`,
+        fallback: `Monitor ${
+          monitor.name
+        } changed status to ${getOperationalLabel(operational)}`,
         color: operational ? '#36a64f' : '#f2c744',
         blocks: [
           {
@@ -97,7 +98,7 @@ export async function notifyDiscord(monitor, operational) {
         description: `\`${monitor.method ? monitor.method : 'GET'} ${
           monitor.url
         }\` - :eyes: [Status Page](${config.settings.url})`,
-        color: operational ? 3581519 : 13632027,
+        color: operational ? 3_581_519 : 13_632_027,
       },
     ],
   }
