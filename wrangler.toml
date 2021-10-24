@@ -1,37 +1,23 @@
-<<<<<<< HEAD
-name = "cf-workers-status-page"
-workers_dev = true
-account_id = ""
-=======
+
 name = "sth-status-page"
 workers_dev = false
 account_id = "process.env.CF_WORKERS_ACCOUNT_ID"
->>>>>>> Create STHCoders repo
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2021-07-23"
 
 [triggers]
-<<<<<<< HEAD
-crons = ["* * * * *"]
-=======
 crons = ["*/2 * * * *"]
->>>>>>> Create STHCoders repo
 
 [site]
 bucket = "out"
 entry-point = "./"
 
-<<<<<<< HEAD
-# uncomment and adjust following if you are not using GitHub Actions
-#[env.production]
-#kv-namespaces = [{binding="KV_STATUS_PAGE", id="xxxx", preview_id=""}]
-=======
 # [env.production]
 # kv_namespaces = [
 # 	{ binding = "sth-status-page", id = "process.env.CF_KV_NAMESPACES_ID",
 #  preview_id = "process.env.CF_KV_NAMESPACES_ID" },
 # ]
->>>>>>> Create STHCoders repo
+
 #zone_id="xxx"
 #route="xxx"
