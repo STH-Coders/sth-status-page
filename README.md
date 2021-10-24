@@ -173,5 +173,5 @@ _Note: If the styles do not come through try using `localhost:8787` instead of `
 
 ---
 
-Copyright (c) 2020 Adam Janiš
-Copyright (c) 2021 STHCoders/Michael Rehnert
+Copyright (c)2020 Adam Janiš
+Copyright (c)2021 STHCoders/Michael Rehnert
