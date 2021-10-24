@@ -12,6 +12,6 @@ crons = ["*/5 * * * *"]
 bucket = "out"
 entry-point = "./"
 
-kv_namespaces = [
-	 { binding = "KV_STATUS_PAGE", id = "5e47f0b555da4ed5b67b81c5eef0d4b0" }
-]
+[kv_namespaces]
+binding = "KV_STATUS_PAGE"
+id = "5e47f0b555da4ed5b67b81c5eef0d4b0"
