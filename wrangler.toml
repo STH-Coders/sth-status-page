@@ -13,11 +13,10 @@ crons = ["*/2 * * * *"]
 bucket = "out"
 entry-point = "./"
 
-# [env.production]
-# kv_namespaces = [
-# 	{ binding = "sth-status-page", id = "process.env.CF_KV_NAMESPACES_ID",
-#  preview_id = "process.env.CF_KV_NAMESPACES_ID" },
-# ]
+[env.production]
+kv_namespaces = [
+	{ binding = "sth-status-page", id = "process.env.CF_KV_NAMESPACES_ID", preview_id = "process.env.CF_KV_NAMESPACES_ID" },
+]
 
 #zone_id="xxx"
 #route="xxx"

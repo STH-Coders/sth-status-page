@@ -18,10 +18,28 @@ settings:
 # list of monitors
 monitors:
   - id: safe-this-home # unique identifier
-    name: SafeThisHome Primary Domain
+    name: Main Webpage (safethishome.com)
     description: "Safe This Home » Cyber Security | Cloud Encryption | Data Protection" # default=empty
     url: "https://safethishome.com/" # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # should the titles be links to the service, default=true
+
+  - id: sth-cyberblade # unique identifier
+    name: The CyberBlade (newsletter.safethishome.com)
+    description: "A relevant newsletter with valuable insights on the cybersecurity and user privacy crisis we are currently facing."
+    url: "https://newsletter.safethishome.com/" # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # should the titles be links to the service, default=true
+
+  - id: sth-links # unique identifier
+    name: Resharable Links (safethis.link)
+    description: "A network of custom links that support the flow of relevant, sharable information from Safe This Home and our partners and brands." # default=empty
+    url: "https://safethis.link/tuk/" # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: true # should the titles be links to the service, default=true

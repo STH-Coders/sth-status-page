@@ -1,10 +1,14 @@
-# Cloudflare Worker - Status Page
+# STH Status Page
 
-Monitor your websites, showcase status including daily history, and get Slack notification whenever your website status changes. Using **Cloudflare Workers**, **CRON Triggers,** and **KV storage**. Check [my status page](https://status-page.eidam.dev) out! 🚀
+Monitors important domains, servers, and auxiliary components of our STH ecosystem of our services, data, and software products.
 
-![Status Page](.gitbook/assets/status_page_screenshot.png)
+---
 
-![Slack notifications](.gitbook/assets/slack_screenshot.png)
+This code is open-source and you are free to reuse and redistribute it as you see fit under the MIT License.
+
+---
+
+Monitor your websites, showcase status including daily history, and get Slack notification whenever your website status changes. Using **Cloudflare Workers**, **CRON Triggers,** and **KV storage**. Check [my status page](https://status-page.safethis.workers.dev/) out! 🚀
 
 ## Pre-requisites
 
@@ -23,13 +27,11 @@ Also, prepare the following secrets
 
 ## Getting started
 
-You can either deploy with **Cloudflare Deploy Button** using GitHub Actions or deploy on your own.
+You can either deploy with GitHub Actions or deploy on your own.
 
-### Deploy with Cloudflare Deploy Button
+### Deploy with GitHub Actions
 
-[![Deploy to Cloudflare Workers](https://camo.githubusercontent.com/1f3d0b4d44a2c3f12c78bd02bae907169430e04d728006db9f97a4befa64c886/68747470733a2f2f6465706c6f792e776f726b6572732e636c6f7564666c6172652e636f6d2f627574746f6e3f706169643d74727565)](https://deploy.workers.cloudflare.com/?url=https://github.com/eidam/cf-workers-status-page)
-
-1. Click the button and follow the instructions, you should end up with a clone of this repository
+1. Clone this repository
 2. Navigate to your new **GitHub repository &gt; Settings &gt; Secrets** and add the following secrets:
 
    ```yaml
@@ -50,7 +52,7 @@ You can either deploy with **Cloudflare Deploy Button** using GitHub Actions or 
    ```yaml
    settings:
      title: 'Status Page'
-     url: 'https://status-page.eidam.dev' # used for Slack & Discord messages
+     url: 'https://status-page.safethis.workers.dev/' # used for Slack & Discord messages
      logo: logo-192x192.png # image in ./public/ folder
      daysInHistogram: 90 # number of days you want to display in histogram
      collectResponseTimes: false # experimental feature, enable only for <5 monitors or on paid plans
@@ -168,3 +170,8 @@ yarn run css
 yarn run dev
 ```
 _Note: If the styles do not come through try using `localhost:8787` instead of `localhost:8080`_
+
+---
+
+Copyright (c) 2020 Adam Janiš
+Copyright (c) 2021 STHCoders/Michael Rehnert
