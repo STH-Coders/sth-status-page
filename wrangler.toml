@@ -6,8 +6,11 @@ webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2021-07-23"
 
 [triggers]
-crons = ["5 * * * *"]
+crons = ["*/5 * * * *"]
 
 [site]
 bucket = "out"
 entry-point = "./"
+
+__STATIC_CONTENT = "__sth-status-page-production-workers_sites_assets"
+KV_STATUS_PAGE = "sth-status-page-KV_STATUS_PAGE"
