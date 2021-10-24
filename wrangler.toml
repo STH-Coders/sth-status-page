@@ -1,4 +1,4 @@
-name = "sth-status-page"
+name = "sth-status"
 workers_dev = false
 account_id = "process.env.CF_WORKERS_ACCOUNT_ID"
 type = "webpack"
@@ -11,6 +11,3 @@ crons = ["*/5 * * * *"]
 [site]
 bucket = "out"
 entry-point = "./"
-
-__STATIC_CONTENT = "__sth-status-page-production-workers_sites_assets"
-KV_STATUS_PAGE = "sth-status-page-KV_STATUS_PAGE"
