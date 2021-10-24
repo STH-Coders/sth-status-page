@@ -1,4 +1,3 @@
-
 name = "sth-status-page"
 workers_dev = false
 account_id = "process.env.CF_WORKERS_ACCOUNT_ID"
@@ -7,17 +6,13 @@ webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2021-07-23"
 
 [triggers]
-crons = ["*/2 * * * *"]
+crons = ["5 * * * *"]
 
 [site]
 bucket = "out"
 entry-point = "./"
 
-# [env.production]
-# kv_namespaces = [
-# 	{ binding = "sth-status-page", id = "process.env.CF_KV_NAMESPACES_ID",
-#  preview_id = "process.env.CF_KV_NAMESPACES_ID" },
-# ]
-
-#zone_id="xxx"
-#route="xxx"
+[env.production]
+kv_namespaces = [
+	 { binding = "KV_STATUS_PAGE", id = "580dcc8efe2046bbb1e01f860edf6382" }
+]
