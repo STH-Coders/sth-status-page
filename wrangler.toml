@@ -11,8 +11,3 @@ crons = ["5 * * * *"]
 [site]
 bucket = "out"
 entry-point = "./"
-
-[env.production]
-kv_namespaces = [
-	 { binding = "KV_STATUS_PAGE", id = "580dcc8efe2046bbb1e01f860edf6382" }
-]
