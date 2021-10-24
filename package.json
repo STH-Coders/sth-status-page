@@ -11,7 +11,7 @@
     "deploy": "yarn build && flareact publish",
     "kv-gc": "node ./src/cli/gcMonitors.js",
     "format": "prettier --write '**/*.{js,css,json,md}'",
-    "css": "postcss .public/tailwind.css -o .public/style.css"
+    "css": "postcss public/tailwind.css -o public/style.css"
   },
   "dependencies": {
     "flareact": "^0.10.0",
