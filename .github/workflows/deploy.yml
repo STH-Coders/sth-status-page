@@ -3,7 +3,7 @@ name: deploy
 on:
   push:
     branches:
-      - main
+      - master
   repository_dispatch:
   schedule:
     - cron: '*/5 * * * *'
