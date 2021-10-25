@@ -8,7 +8,7 @@ This code is open-source and you are free to reuse and redistribute it as you se
 
 ---
 
-Monitor your websites, showcase status including daily history, and get Slack notification whenever your website status changes. Using **Cloudflare Workers**, **CRON Triggers,** and **KV storage**. Check [my status page](https://status-page.safethis.workers.dev/) out! 🚀
+Monitor your websites, showcase status including daily history, and get Slack notification whenever your website status changes. Using **Cloudflare Workers**, **CRON Triggers,** and **KV storage**. Check [our status page](https://status-page.sthome.workers.dev/) out! 🚀
 
 ## Pre-requisites
 
@@ -35,9 +35,9 @@ You can either deploy with GitHub Actions or deploy on your own.
 2. Navigate to your new **GitHub repository &gt; Settings &gt; Secrets** and add the following secrets:
 
    ```yaml
-   - Name: CF_API_TOKEN (should be added automatically)
+   - Name: CF_API_TOKEN
 
-   - Name: CF_ACCOUNT_ID (should be added automatically)
+   - Name: CF_ACCOUNT_ID
 
    - Name: SECRET_SLACK_WEBHOOK_URL (optional)
    - Value: your-slack-webhook-url
@@ -52,7 +52,7 @@ You can either deploy with GitHub Actions or deploy on your own.
    ```yaml
    settings:
      title: 'Status Page'
-     url: 'https://status-page.safethis.workers.dev/' # used for Slack & Discord messages
+     url: 'https://status-page.sthome.workers.dev/' # used for Slack & Discord messages
      logo: logo-192x192.png # image in ./public/ folder
      daysInHistogram: 90 # number of days you want to display in histogram
      collectResponseTimes: false # experimental feature, enable only for <5 monitors or on paid plans
@@ -82,7 +82,7 @@ You can either deploy with GitHub Actions or deploy on your own.
 5. Push to `main` branch to trigger the deployment
 6. 🎉
 7. _\(optional\)_ Go to [Cloudflare Workers settings](https://dash.cloudflare.com/?to=/workers) and assign custom domain/route
-   - e.g. `status-page.eidam.dev/*` _\(make sure you include `/*` as the Worker also serve static files\)_
+   - e.g. `status-page.sthome.dev/*` _\(make sure you include `/*` as the Worker also serve static files\)_
 8. _\(optional\)_ Edit [wrangler.toml](./wrangler.toml) to adjust Worker settings or CRON Trigger schedule, especially if you are on [Workers Free plan](#workers-kv-free-tier)
 
 ### Telegram notifications

@@ -33,7 +33,7 @@ export async function getEdgeProps() {
       kvMonitorsLastUpdate: kvMonitors ? kvMonitors.lastUpdate : {},
     },
     // Revalidate these props once every x seconds
-    revalidate: 5,
+    revalidate: 30,
   }
 }
 
@@ -101,8 +101,9 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
           </div>
           <div>
             <a
-              href="https://github.com/eidam/cf-workers-status-page"
+              href="https://github.com/STH-Coders/sth-status-page"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Get Your Status Page
             </a>
