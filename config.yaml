@@ -1,6 +1,6 @@
 settings:
-  title: "STH Status"
-  url: "https://sthome.workers.dev/" # used for Slack & Discord messages
+  title: "STH Status Page"
+  url: "https://status.safethishome.workers.dev/" # used for Slack & Discord messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: false # experimental feature, enable only for <5 monitors or on paid plans
@@ -8,11 +8,11 @@ settings:
   # configurable texts across the status page
   allmonitorsOperational: "All Systems Operational"
   notAllmonitorsOperational: "Most Systems Operational (We are working to rectify the intermittent glitches.)"
-  monitorLabelOperational: "All Primary Systems Operational (We are observing some interference, but all critical parts of the network remain stable."
-  monitorLabelNotOperational: "Most Systems Not Operational (We are aware of the situation and working to ensure service is restored as quickly as possible.)"
+  monitorLabelOperational: "All Primary Systems Online (Intermittent glitches have been observed, but all critical parts of the network are functioning properly.)"
+  monitorLabelNotOperational: "Many Systems Not Operational (We are aware of the situation and working to ensure service is restored as quickly as possible.)"
   monitorLabelNoData: "Additional data is currently unavailable."
   dayInHistogramNoData: "Additional data is currently unavailable."
-  dayInHistogramOperational: "All systems checks good"
+  dayInHistogramOperational: "All Systems Operational"
   dayInHistogramNotOperational: "Some checks are failing. (Troubleshooting is in progress as we speak.)"
 
 # list of monitors

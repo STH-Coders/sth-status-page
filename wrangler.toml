@@ -1,4 +1,4 @@
-name = "sth-status"
+name = "STH Status Page"
 workers_dev = false
 account_id = ""
 type = "webpack"

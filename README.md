@@ -8,8 +8,7 @@ This code is open-source and you are free to reuse and redistribute it as you se
 
 ---
 
-Monitor your websites, showcase status including daily history, and get Slack notification whenever your website status changes. Using **Cloudflare Workers**, **CRON Triggers,** and **KV storage**. Check [our status page](https://status-page.sthome.workers.dev/) out! 🚀
-
+Monitor your websites, showcase status including daily history, and get Slack notification whenever your website status changes. Using **Cloudflare Workers**, **CRON Triggers,** and **KV storage**. Check out [our status page](https://status.safethishome.workers.dev) here!
 ## Pre-requisites
 
 You'll need a [Cloudflare Workers account](https://dash.cloudflare.com/sign-up/workers) with
@@ -52,7 +51,7 @@ You can either deploy with GitHub Actions or deploy on your own.
    ```yaml
    settings:
      title: 'Status Page'
-     url: 'https://status-page.sthome.workers.dev/' # used for Slack & Discord messages
+     url: 'https://status.safethishome.workers.dev/' # used for Slack & Discord messages
      logo: logo-192x192.png # image in ./public/ folder
      daysInHistogram: 90 # number of days you want to display in histogram
      collectResponseTimes: false # experimental feature, enable only for <5 monitors or on paid plans

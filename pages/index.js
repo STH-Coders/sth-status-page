@@ -3,6 +3,7 @@ import { useStore } from 'laco-react'
 import Head from 'flareact/head'
 
 import { getKVMonitors, useKeyPress } from '../src/functions/helpers'
+// @ts-ignore
 import config from '../config.yaml'
 import MonitorCard from '../src/components/monitorCard'
 import MonitorFilter from '../src/components/monitorFilter'
@@ -79,15 +80,13 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
           </div>
         </div>
         <MonitorStatusHeader kvMonitorsLastUpdate={kvMonitorsLastUpdate} />
-        {state.visible.map((monitor, key) => {
-          return (
-            <MonitorCard
-              key={key}
-              monitor={monitor}
-              data={kvMonitors[monitor.id]}
-            />
-          )
-        })}
+        {state.visible.map((monitor, key) => (
+          <MonitorCard
+            key={key}
+            monitor={monitor}
+            data={kvMonitors[monitor.id]}
+          />
+        ))}
         <div className="flex flex-row justify-between mt-4 text-sm">
           <div>
             Powered by{' '}
