@@ -1,14 +1,27 @@
-# STH Status Page
+# _*STH STATUS PAGE*_
 
-Monitors important domains, servers, and auxiliary components of our STH ecosystem of our services, data, and software products.
+- Monitors important domains, servers, and components within the STH ecosystem of services, data, and other software products. 
+- Boosts SEO, showcases 90-day historical reliability, and provides real-time Slack notification for all status changes. 
+- The code is open-source under the MIT License and free for you to reuse and redistribute if you so desire.
+- Built with **Cloudflare Workers**, **CRON Triggers,** and **KV storage**; originally developed by [Adam Janiš](https://github.com/eidam).
+
+- ### _*[VIEW LIVE](https://status.safethishome.workers.dev)*_
 
 ---
 
-This code is open-source and you are free to reuse and redistribute it as you see fit under the MIT License.
+   <p align=center 
+  
+[![made-with-react](https://img.shields.io/badge/Made%20with-React-1f425f.svg?style=for-the-badge)](https://reactjs.org/)
+      
+   <p align=center
 
----
+[![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=for-the-badge)](https://stackshare.io/sthcoders/main-site-stack) 
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://lbesson.mit-license.org/)
 
-Monitor your websites, showcase status including daily history, and get Slack notification whenever your website status changes. Using **Cloudflare Workers**, **CRON Triggers,** and **KV storage**. Check out [our status page](https://status.safethishome.workers.dev) here!
+   <p align=center
+   
+[![CodeQL](https://github.com/STH-Coders/sth-status-page/actions/workflows/codeql-analysis.yml/badge.svg?style=for-the-badge)](https://github.com/STH-Coders/sth-status-page/actions/workflows/codeql-analysis.yml)
+
 ## Pre-requisites
 
 You'll need a [Cloudflare Workers account](https://dash.cloudflare.com/sign-up/workers) with
