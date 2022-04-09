@@ -1,4 +1,6 @@
-# __STH STATUS PAGE__
+# **STH STATUS PAGE**
+
+v1.3.0
 
 - Monitors important domains, servers, and components within the STH ecosystem of services, data, and other software products.
 - Boosts SEO, showcases 90-day historical reliability, and provides real-time Slack notification for all status changes.
