@@ -116,13 +116,12 @@ export async function processCronTrigger(event) {
           checkLocation,
         )
       ) {
-        monitorsState.monitors[monitor.id].checks[checkDay].res[
-          checkLocation
-        ] = {
-          n: 0,
-          ms: 0,
-          a: 0,
-        }
+        monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation] =
+          {
+            n: 0,
+            ms: 0,
+            a: 0,
+          }
       }
 
       // increment number of checks and sum of ms
@@ -134,9 +133,8 @@ export async function processCronTrigger(event) {
       ].ms += requestTime)
 
       // save new average ms
-      monitorsState.monitors[monitor.id].checks[checkDay].res[
-        checkLocation
-      ].a = Math.round(ms / no)
+      monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].a =
+        Math.round(ms / no)
     } else if (!monitorOperational) {
       // Save allOperational to false
       monitorsState.lastUpdate.allOperational = false
