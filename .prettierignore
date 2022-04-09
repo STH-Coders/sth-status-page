@@ -1,0 +1,4 @@
+# Ignore generated files
+out
+public
+.pnp.cjs
